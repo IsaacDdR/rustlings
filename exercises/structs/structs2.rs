@@ -17,7 +17,7 @@ struct Order {
 
 fn create_order_template() -> Order {
     Order {
-        name: String::from("Bob"),
+        name: String::from("Hacker in the rust"),
         year: 2019,
         made_by_phone: false,
         made_by_mobile: false,
@@ -39,7 +39,13 @@ mod tests {
 
         let your_order     = create_order_template{
             name: String::from("Hacker in Rust"),
-            count: 1,
+            year: 2019,
+            made_by_phone: false,
+            made_by_mobile: false,
+            made_by_email: true,
+            item_number :123,
+            count: 0,
+
         };
 
        
