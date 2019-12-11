@@ -27,6 +27,17 @@ fn create_order_template() -> Order {
     }
 }
 
+fn create_new_order() -> order_template {
+    Order {
+        name: String::from("Hacker in the rust"),
+        year: 2019,
+        made_by_phone: false,
+        made_by_mobile: false,
+        made_by_email: true,
+    }
+}
+
+
 
 
 #[cfg(test)]
@@ -37,7 +48,7 @@ mod tests {
     fn your_order() {
         let order_template = create_order_template();
 
-        let your_order     = create_order_template{
+        let your_order     = {
             name: String::from("Hacker in Rust"),
             year: 2019,
             made_by_phone: false,
